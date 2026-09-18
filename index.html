@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#0a0f18">
+<title>Soluções Komeco — Luiz Henrique</title>
+<meta property="og:title" content="Soluções Komeco por segmento">
+<meta property="og:description" content="Escolha o seu segmento e veja o combo Komeco ideal — hotéis, indústrias, comércio, condomínios, construtoras e agronegócio.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{ --vermelho:#E30613; --vermelho-esc:#b8050f; --navy:#0B1F3A; --dourado:#C9A24B;
+         --tinta:#16171a; --cinza:#f4f4f6; --card:#fff; --linha:#e6e6ea; --mut:#5c6069; --verde:#25D366; }
+  *{ margin:0; padding:0; box-sizing:border-box; -webkit-tap-highlight-color:transparent; min-width:0; }
+  html,body{ width:100%; max-width:100%; overflow-x:hidden; }
+  body{ font-family:"Inter",system-ui,-apple-system,Segoe UI,Arial,sans-serif; color:var(--tinta); background:var(--cinza); line-height:1.55; }
+  img{ max-width:100%; height:auto; display:block; }
+  h1,h2,h3{ font-family:"Montserrat",Arial,sans-serif; font-weight:800; }
+  .topo{ background:var(--vermelho); color:#fff; padding:13px 20px; display:flex; align-items:center; gap:11px;
+         position:sticky; top:0; z-index:30; box-shadow:0 2px 12px rgba(0,0,0,.15); }
+  .selo{ background:#fff; color:var(--vermelho); font-weight:800; font-size:20px; width:40px; height:40px; border-radius:9px;
+         display:grid; place-items:center; font-family:"Montserrat",sans-serif; }
+  .topo b{ font-size:22px; letter-spacing:2px; font-family:"Montserrat",sans-serif; }
+  .topo .seg{ margin-left:auto; font-size:11px; letter-spacing:1.5px; text-transform:uppercase; opacity:.95; }
+  .hero{ text-align:center; padding:56px 22px 26px; }
+  .hero .kick{ color:var(--vermelho); font-size:12px; letter-spacing:4px; text-transform:uppercase; font-weight:700;
+               display:inline-flex; align-items:center; gap:12px; }
+  .hero .kick::before,.hero .kick::after{ content:""; width:32px; height:2px; background:var(--vermelho); opacity:.5; }
+  .hero h1{ font-size:clamp(30px,6.5vw,50px); font-weight:800; line-height:1.1; margin:16px auto 0; max-width:900px; color:var(--tinta); }
+  .hero h1 span{ color:var(--vermelho); }
+  .hero p{ color:var(--mut); font-size:clamp(15px,3.4vw,19px); max-width:640px; margin:16px auto 0; }
+  .grade{ max-width:1160px; margin:0 auto; padding:30px 18px 20px; display:grid; gap:20px;
+          grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); }
+  .nicho{ background:var(--card); border:1px solid var(--linha); border-top:4px solid var(--vermelho); border-radius:16px;
+          padding:28px 24px; text-decoration:none; color:var(--tinta); box-shadow:0 8px 24px rgba(0,0,0,.08);
+          transition:transform .2s,box-shadow .2s; display:flex; flex-direction:column; }
+  .nicho:hover{ transform:translateY(-5px); box-shadow:0 16px 38px rgba(0,0,0,.14); }
+  .nicho .ic{ font-size:38px; width:70px; height:70px; background:#fdeaeb; border-radius:50%;
+              display:grid; place-items:center; margin-bottom:16px; }
+  .nicho h3{ font-size:22px; color:var(--tinta); margin-bottom:6px; }
+  .nicho p{ color:var(--mut); font-size:14px; flex:1; }
+  .nicho .cta{ color:var(--vermelho); font-weight:700; font-size:14px; margin-top:16px; }
+  .rodape{ background:var(--navy); color:#fff; padding:34px 18px 40px; margin-top:26px; }
+  .carimbo{ max-width:600px; margin:0 auto; background:linear-gradient(160deg,#0e2647,#0a1a30); border:2px solid var(--dourado);
+            border-radius:16px; padding:20px; display:flex; align-items:center; gap:16px; }
+  .selolh{ flex:0 0 auto; width:84px; height:84px; border:2px solid var(--dourado); border-radius:50%; display:grid;
+           place-items:center; text-align:center; }
+  .selolh b{ color:var(--dourado); font-size:28px; font-weight:800; font-family:"Montserrat",sans-serif; line-height:1; }
+  .selolh small{ color:var(--dourado); font-size:7px; letter-spacing:1.5px; display:block; margin-top:2px; }
+  .dados{ flex:1; min-width:0; } .dados h3{ font-size:20px; color:#fff; } .dados p{ color:#cdd6e2; font-size:13px; margin:3px 0 5px; }
+  .dados .g{ color:var(--dourado); font-weight:700; font-size:14px; }
+  .qr{ flex:0 0 auto; width:90px; height:90px; background:#fff; border-radius:10px; padding:7px; }
+  .qr img{ width:100%; height:100%; }
+  @media(max-width:440px){ .carimbo{ flex-direction:column; text-align:center; } }
+  .float{ position:fixed; right:16px; bottom:16px; background:var(--verde); color:#fff; text-decoration:none; font-weight:700;
+          padding:13px 20px; border-radius:50px; box-shadow:0 6px 20px rgba(37,211,102,.4); z-index:40; font-size:14px; }
+  .disc{ text-align:center; color:#9a9aa0; font-size:11px; padding:16px; }
+</style>
+</head>
+<body>
+  <header class="topo"><span class="selo">K</span><b>KOMECO</b><span class="seg">Luiz Henrique · Consultor</span></header>
+  <section class="hero">
+    <div class="kick">Soluções Komeco</div>
+    <h1>A solução certa para <span>o seu segmento</span></h1>
+    <p>Escolha abaixo e veja o combo Komeco ideal — economia, conforto e um só fornecedor, com assistência técnica em todo o Brasil.</p>
+  </section>
+  <main class="grade">
+      <a class="nicho" href="combo_industrias/">
+        <div class="ic">🏭</div>
+        <h3>Indústrias & Fábricas</h3>
+        <p>Chiller, solar, água quente, bombas e climatização — foco no PIM.</p>
+        <span class="cta">Ver soluções →</span>
+      </a>
+      <a class="nicho" href="combo_hoteis/">
+        <div class="ic">🏨</div>
+        <h3>Hotéis & Pousadas</h3>
+        <p>Água quente, climatização, piscina, solar e recarga elétrica.</p>
+        <span class="cta">Ver soluções →</span>
+      </a>
+      <a class="nicho" href="combo_comercio/">
+        <div class="ic">🏬</div>
+        <h3>Comércio</h3>
+        <p>Lojas, restaurantes e academias: climatização, solar e água quente.</p>
+        <span class="cta">Ver soluções →</span>
+      </a>
+      <a class="nicho" href="combo_condominios/">
+        <div class="ic">🏢</div>
+        <h3>Condomínios</h3>
+        <p>Aquecimento central, pressurização, piscina, solar e recarga.</p>
+        <span class="cta">Ver soluções →</span>
+      </a>
+      <a class="nicho" href="combo_construtoras/">
+        <div class="ic">🏗️</div>
+        <h3>Construtoras</h3>
+        <p>Diferenciais no projeto que valorizam e vendem o empreendimento.</p>
+        <span class="cta">Ver soluções →</span>
+      </a>
+      <a class="nicho" href="combo_agronegocio/">
+        <div class="ic">🚜</div>
+        <h3>Agronegócio</h3>
+        <p>Solar, bombeamento, aquecimento e climatização para o campo.</p>
+        <span class="cta">Ver soluções →</span>
+      </a>
+  </main>
+  <footer class="rodape">
+    <div class="carimbo">
+      <div class="selolh"><div><b>LH</b><small>LUIZ HENRIQUE</small></div></div>
+      <div class="dados">
+        <h3>Luiz Henrique</h3>
+        <p>Gostou? Fale comigo — atendimento direto.</p>
+        <span class="g">Aponte a câmera no QR-Code&nbsp;→</span>
+      </div>
+      <div class="qr"><img src="qr_airgo.png" alt="QR-Code para falar com Luiz Henrique"></div>
+    </div>
+  </footer>
+  <p class="disc">Portfólio e informações técnicas: Komeco (komeco.com.br). Condições comerciais e dimensionamento sob consulta.</p>
+  <a class="float" href="https://airgo.bio/lhcorreia" target="_blank" rel="noopener">💬 WhatsApp</a>
+</body>
+</html>

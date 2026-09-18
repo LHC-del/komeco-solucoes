@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#E30613">
+<title>Combo Komeco para Condomínios — Luiz Henrique</title>
+<meta property="og:title" content="Combo Komeco para Condomínios">
+<meta property="og:description" content="Soluções Komeco por segmento — economia, conforto e um só fornecedor.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{ --vermelho:#E30613; --vermelho-esc:#b8050f; --navy:#0B1F3A; --dourado:#C9A24B;
+         --tinta:#16171a; --cinza:#f4f4f6; --card:#fff; --linha:#e6e6ea; --mut:#5c6069; --verde:#25D366; }
+  *{ margin:0; padding:0; box-sizing:border-box; -webkit-tap-highlight-color:transparent; min-width:0; }
+  html,body{ width:100%; max-width:100%; overflow-x:hidden; }
+  html{ scroll-behavior:smooth; }
+  body{ font-family:"Inter",system-ui,-apple-system,Segoe UI,Arial,sans-serif; color:var(--tinta);
+        background:var(--cinza); line-height:1.55; }
+  img{ max-width:100%; height:auto; display:block; }
+  h1,h2,h3,h4{ font-family:"Montserrat",Arial,sans-serif; font-weight:800; }
+  h1,h2,h3,p,li{ overflow-wrap:anywhere; }
+
+  .topo{ background:var(--vermelho); color:#fff; padding:13px 20px; display:flex; align-items:center; gap:11px;
+         position:sticky; top:0; z-index:30; box-shadow:0 2px 12px rgba(0,0,0,.15); }
+  .selo{ background:#fff; color:var(--vermelho); font-weight:800; font-size:20px; width:40px; height:40px;
+         border-radius:9px; display:grid; place-items:center; flex:0 0 auto; font-family:"Montserrat",sans-serif; }
+  .topo b{ font-size:22px; letter-spacing:2px; font-family:"Montserrat",sans-serif; font-weight:800; }
+  .topo .seg{ margin-left:auto; font-size:11px; letter-spacing:1.5px; text-transform:uppercase; opacity:.95; }
+
+  .hero{ text-align:center; padding:52px 22px 26px; max-width:900px; margin:0 auto; }
+  .hero .kick{ color:var(--vermelho); font-size:12px; letter-spacing:4px; text-transform:uppercase; font-weight:700;
+               display:inline-flex; align-items:center; gap:12px; }
+  .hero .kick::before,.hero .kick::after{ content:""; width:32px; height:2px; background:var(--vermelho); opacity:.5; }
+  .hero h1{ font-size:clamp(28px,6vw,46px); font-weight:800; line-height:1.12; margin:16px auto 0; max-width:860px; color:var(--tinta); }
+  .hero h1 span{ color:var(--vermelho); }
+  .hero p{ color:var(--mut); font-size:clamp(15px,3.4vw,19px); max-width:680px; margin:16px auto 0; }
+  .pilares{ display:flex; flex-wrap:wrap; gap:10px; justify-content:center; margin:26px auto 0; max-width:900px; }
+  .pilares .p{ background:#fff; border:1px solid var(--linha); color:var(--tinta); padding:9px 16px; border-radius:30px;
+               font-size:13.5px; font-weight:500; box-shadow:0 2px 8px rgba(0,0,0,.04); }
+  .pilares .p b{ color:var(--vermelho); font-weight:700; }
+
+  .sec{ max-width:1200px; margin:0 auto; padding:38px 18px 8px; }
+  .sec .kick2{ text-align:center; color:var(--vermelho); font-size:11px; letter-spacing:3px; text-transform:uppercase; font-weight:700; margin-bottom:8px; }
+  .sec h2{ text-align:center; font-size:clamp(23px,5vw,34px); margin-bottom:6px; color:var(--tinta); }
+  .sec .leg{ text-align:center; color:var(--mut); font-size:15px; margin-bottom:26px; }
+
+  .grade{ display:grid; gap:18px; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); }
+  .sol{ background:var(--card); border-radius:16px; overflow:hidden; box-shadow:0 8px 24px rgba(0,0,0,.08);
+        display:flex; flex-direction:column; border-top:4px solid var(--vermelho); transition:transform .2s,box-shadow .2s; }
+  .sol:hover{ transform:translateY(-5px); box-shadow:0 16px 38px rgba(0,0,0,.13); }
+  .sol .pic{ background:linear-gradient(160deg,#fff,#eef0f3); display:grid; place-items:center; padding:20px; border-bottom:1px solid var(--linha); }
+  .sol .pic img{ height:132px; width:auto; object-fit:contain; filter:drop-shadow(0 10px 16px rgba(0,0,0,.16)); }
+  .sol .top{ display:flex; align-items:center; gap:12px; padding:16px 18px 6px; }
+  .sol .ic{ font-size:24px; width:50px; height:50px; background:#fdeaeb; border-radius:12px; display:grid; place-items:center; flex:0 0 auto; }
+  .sol .top h3{ font-size:19px; line-height:1.15; color:var(--tinta); }
+  .sol .top .q{ font-size:12.5px; color:var(--vermelho); font-weight:600; margin-top:2px; }
+  .sol .body{ padding:4px 18px 16px; }
+  .sol ul{ list-style:none; margin-top:8px; }
+  .sol li{ padding:5px 0 5px 20px; position:relative; font-size:13.5px; color:#3a3d44; }
+  .sol li::before{ content:""; position:absolute; left:0; top:9px; width:8px; height:8px; border-radius:50%; background:var(--vermelho); }
+  .sol .det{ display:inline-block; margin:8px 0 12px; color:var(--vermelho); font-weight:700; font-size:12.5px;
+             text-decoration:none; border-bottom:1px solid rgba(227,6,19,.35); }
+  .sol .det:hover{ color:var(--vermelho-esc); border-color:var(--vermelho); }
+  .sol .ganho{ margin-top:auto; background:var(--cinza); border-top:1px solid var(--linha); color:var(--tinta); font-size:13px; padding:12px 18px; }
+  .sol .ganho b{ color:var(--vermelho); font-weight:700; }
+
+  .connect{ max-width:1200px; margin:24px auto 0; padding:0 18px; }
+  .connect .box{ background:var(--vermelho); color:#fff; border-radius:18px; padding:26px 24px; display:flex; align-items:center; gap:18px; flex-wrap:wrap; }
+  .connect .ic{ font-size:40px; }
+  .connect h3{ font-size:22px; color:#fff; }
+  .connect p{ color:#ffe3e5; font-size:14.5px; margin-top:5px; max-width:800px; }
+
+  .porque{ max-width:1200px; margin:28px auto 0; padding:0 18px; display:grid; gap:14px; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); }
+  .porque .c{ background:#fff; border:1px solid var(--linha); border-radius:14px; padding:20px; box-shadow:0 4px 14px rgba(0,0,0,.05); }
+  .porque .c .ic{ font-size:24px; } .porque .c h4{ margin:9px 0 5px; font-size:16px; color:var(--tinta); } .porque .c p{ font-size:13.5px; color:var(--mut); }
+
+  /* RODAPÉ — CARIMBO ORIGINAL (navy + dourado), NÃO ALTERAR */
+  .rodape{ background:var(--navy); color:#fff; padding:34px 18px 40px; margin-top:34px; }
+  .carimbo{ max-width:600px; margin:0 auto; background:linear-gradient(160deg,#0e2647,#0a1a30); border:2px solid var(--dourado);
+            border-radius:16px; padding:20px; display:flex; align-items:center; gap:16px; }
+  .selolh{ flex:0 0 auto; width:84px; height:84px; border:2px solid var(--dourado); border-radius:50%; display:grid; place-items:center; text-align:center; }
+  .selolh b{ color:var(--dourado); font-size:28px; font-weight:800; line-height:1; font-family:"Montserrat",sans-serif; }
+  .selolh small{ color:var(--dourado); font-size:7px; letter-spacing:1.5px; display:block; margin-top:2px; }
+  .dados{ flex:1; min-width:0; } .dados h3{ font-size:20px; color:#fff; } .dados p{ color:#cdd6e2; font-size:13px; margin:3px 0 5px; }
+  .dados .g{ color:var(--dourado); font-weight:700; font-size:14px; }
+  .qr{ flex:0 0 auto; width:90px; height:90px; background:#fff; border-radius:10px; padding:7px; } .qr img{ width:100%; height:100%; }
+  @media(max-width:440px){ .carimbo{ flex-direction:column; text-align:center; } }
+
+  .float{ position:fixed; right:16px; bottom:16px; background:var(--verde); color:#fff; text-decoration:none; font-weight:700;
+          padding:13px 20px; border-radius:50px; box-shadow:0 6px 20px rgba(37,211,102,.4); z-index:40; font-size:14px; }
+  .disc{ max-width:1200px; margin:0 auto; padding:14px 18px 0; color:#9a9aa0; font-size:11px; text-align:center; }
+</style>
+</head>
+<body>
+  <header class="topo"><span class="selo">K</span><b>KOMECO</b><span class="seg">Soluções para condomínios</span></header>
+
+  <section class="hero">
+    <div class="kick">Combo Komeco · Condomínios</div>
+    <h1>Menos custo comum. <span>Mais</span> valor pro morador.</h1>
+    <p>Aquecimento central, pressurização, piscina, energia solar e recarga elétrica para as áreas comuns — economia no rateio e valorização do condomínio.</p>
+    <div class="pilares">
+      <div class="p">💧 <b>Água quente</b> e pressão</div>
+      <div class="p">📉 <b>Menos</b> rateio</div>
+      <div class="p">🏊 <b>Áreas</b> de lazer</div>
+      <div class="p">🤝 <b>Um</b> só fornecedor</div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="kick2">O combo completo</div>
+    <h2>6 soluções para o seu condomínio</h2>
+    <p class="leg">Da caldeira central à vaga com recarga.</p>
+
+    <div class="grade">
+
+      <article class="sol">
+        <div class="pic"><img src="assets/aquec.png" alt="Aquecimento de água central Komeco"></div>
+        <div class="top"><div class="ic">🚿</div><div><h3>Aquecimento de água central</h3><div class="q">Banho quente em todas as torres</div></div></div>
+        <div class="body"><ul>
+          <li>Bomba de calor comercial para grande volume</li>
+          <li>Aquecimento solar + reservatórios térmicos</li>
+          <li>Gás como reforço/backup</li>
+          <li>Recirculação com bombas TP</li>
+        </ul>
+        <a class="det" href="https://www.komeco.com.br/bombas-de-calor" target="_blank" rel="noopener">Ver detalhes no site →</a></div>
+        <div class="ganho">Água quente central <b>gastando muito menos</b>.</div>
+      </article>
+
+      <article class="sol">
+        <div class="pic"><img src="assets/bombas.png" alt="Bombas e pressurização Komeco"></div>
+        <div class="top"><div class="ic">🔧</div><div><h3>Bombas e pressurização</h3><div class="q">Pressão firme em todos os andares</div></div></div>
+        <div class="body"><ul>
+          <li>Pressurizadores Smartpress e linha TP</li>
+          <li>Bombas para reservatórios e recalque</li>
+          <li>Operação silenciosa</li>
+          <li>Estável e durável</li>
+        </ul>
+        <a class="det" href="https://www.komeco.com.br/bombas-e-pressurizadores" target="_blank" rel="noopener">Ver detalhes no site →</a></div>
+        <div class="ganho">Pressão igual <b>do térreo à cobertura</b>.</div>
+      </article>
+
+      <article class="sol">
+        <div class="pic"><img src="assets/piscina.png" alt="Piscina & lazer Komeco"></div>
+        <div class="top"><div class="ic">🏊</div><div><h3>Piscina & lazer</h3><div class="q">Área comum sempre pronta</div></div></div>
+        <div class="body"><ul>
+          <li>Bombas + filtros + robôs AquaPlus e Skimmer</li>
+          <li>Gerador de cloro e UV-C + O₃</li>
+          <li>Aquecimento e iluminação RGB</li>
+          <li>AquaHUB para automação</li>
+        </ul>
+        <a class="det" href="https://www.komeco.com.br/equipamentos-para-piscina" target="_blank" rel="noopener">Ver detalhes no site →</a></div>
+        <div class="ganho">Piscina limpa <b>com menos mão de obra</b>.</div>
+      </article>
+
+      <article class="sol">
+        <div class="pic"><img src="assets/solar.png" alt="Energia solar Komeco"></div>
+        <div class="top"><div class="ic">☀️</div><div><h3>Energia solar</h3><div class="q">Reduz a conta comum</div></div></div>
+        <div class="body"><ul>
+          <li>Módulos + inversores nas áreas comuns</li>
+          <li>Micro inversores</li>
+          <li>Luminárias solares p/ jardins e garagem</li>
+          <li>Abate a conta do condomínio</li>
+        </ul>
+        <a class="det" href="https://www.komeco.com.br/energia-solar-fotovoltaica" target="_blank" rel="noopener">Ver detalhes no site →</a></div>
+        <div class="ganho">Menos energia na <b>taxa condominial</b>.</div>
+      </article>
+
+      <article class="sol">
+        <div class="pic"><img src="assets/ev.png" alt="Mobilidade elétrica Komeco"></div>
+        <div class="top"><div class="ic">🚗</div><div><h3>Mobilidade elétrica</h3><div class="q">Vagas com recarga</div></div></div>
+        <div class="body"><ul>
+          <li>Carregador OCPP 7 kW e 22 kW por vaga</li>
+          <li>Gestão por app e RFID (rateio individual)</li>
+          <li>Valoriza o imóvel</li>
+          <li>Pronto para a frota dos moradores</li>
+        </ul>
+        <a class="det" href="https://www.komeco.com.br/carregador-veicular" target="_blank" rel="noopener">Ver detalhes no site →</a></div>
+        <div class="ganho">Recarga na garagem <b>valoriza o condomínio</b>.</div>
+      </article>
+
+      <article class="sol">
+        <div class="pic"><img src="assets/clima.png" alt="Climatização e ar Komeco"></div>
+        <div class="top"><div class="ic">🌬️</div><div><h3>Climatização e ar</h3><div class="q">Salão de festas e academia do condô</div></div></div>
+        <div class="body"><ul>
+          <li>Ar-condicionado Inverter p/ áreas comuns</li>
+          <li>Cortina de ar no hall</li>
+          <li>Desumidificador para subsolos</li>
+          <li>Exaustão de garagem</li>
+        </ul>
+        <a class="det" href="https://www.komeco.com.br/sistemas-de-climatizacao-e-ventilacao" target="_blank" rel="noopener">Ver detalhes no site →</a></div>
+        <div class="ganho">Áreas comuns <b>confortáveis o ano todo</b>.</div>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="porque">
+    <div class="c"><div class="ic">📉</div><h4>Reduz o rateio</h4><p>Aquecimento e energia pesam na taxa — o combo corta os dois.</p></div>
+    <div class="c"><div class="ic">🏢</div><h4>Valoriza o imóvel</h4><p>Lazer, recarga e eficiência aumentam o valor das unidades.</p></div>
+    <div class="c"><div class="ic">🌱</div><h4>Sustentabilidade</h4><p>Solar e bomba de calor reforçam o posicionamento verde.</p></div>
+    <div class="c"><div class="ic">🤝</div><h4>Um fornecedor só</h4><p>Projeto integrado, marca única e assistência nacional.</p></div>
+  </section>
+
+  <div class="connect">
+    <div class="box">
+      <div class="ic">🏢</div>
+      <div style="flex:1;min-width:220px">
+        <h3>Monto o combo sob medida para o seu condomínio</h3>
+        <p>Cada condomínio é diferente: nº de torres, vagas e áreas comuns. Me chame e priorizamos o que reduz o rateio mais rápido.</p>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <footer class="rodape">
+    <div class="carimbo">
+      <div class="selolh"><div><b>LH</b><small>LUIZ HENRIQUE</small></div></div>
+      <div class="dados">
+        <h3>Luiz Henrique</h3>
+        <p>Gostou? Fale comigo — atendimento direto.</p>
+        <span class="g">Aponte a câmera no QR-Code&nbsp;→</span>
+      </div>
+      <div class="qr"><img src="qr_airgo.png" alt="QR-Code para falar com Luiz Henrique"></div>
+    </div>
+  </footer>
+  <p class="disc">Portfólio e linhas: Komeco (komeco.com.br) — clique em “Ver detalhes no site” para a página oficial de cada solução. Dimensionamento sob avaliação de engenharia. Condições comerciais sob consulta.</p>
+
+  <a class="float" href="https://airgo.bio/lhcorreia" target="_blank" rel="noopener">💬 WhatsApp</a>
+</body>
+</html>
