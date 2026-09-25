@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#E30613">
+<title>Proposta · Carregador Komeco C7 (7 kW) — R Branco Engenharia</title>
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Komeco · L.H.C. da Silva">
+<meta property="og:title" content="Proposta · Carregador Veicular Komeco C7">
+<meta property="og:description" content="Preparada para R Branco Engenharia — 4 carregadores Komeco OCPP com frete grátis na 1ª compra.">
+<meta property="og:image" content="https://lhc-del.github.io/komeco-solucoes/rb-c7-3bzxs/assets/og_image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://lhc-del.github.io/komeco-solucoes/rb-c7-3bzxs/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Proposta · Carregador Veicular Komeco C7">
+<meta name="twitter:description" content="Preparada para R Branco Engenharia — frete grátis na 1ª compra.">
+<meta name="twitter:image" content="https://lhc-del.github.io/komeco-solucoes/rb-c7-3bzxs/assets/og_image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#ffffff; --title:#061b31; --body:#5b6b82; --line:#e9edf3; --soft:#f7f9fc;
+    --komeco:#E30613; --komeco-d:#b8050f; --komeco-soft:#fdecec;
+    --navy:#0b1f3a; --dourado:#C9A24B; --green:#0f9d58;
+    --font:'Inter',system-ui,-apple-system,Segoe UI,Arial,sans-serif;
+    --mono:'Geist Mono','Source Code Pro',monospace;
+    --r:8px; --r-sm:6px;
+    --sh-card:rgba(50,50,93,.12) 0 20px 40px -24px, rgba(0,0,0,.06) 0 8px 16px -12px;
+    --sh-sm:rgba(50,50,93,.10) 0 8px 16px -10px, rgba(0,0,0,.04) 0 3px 6px -4px;
+  }
+  *{ margin:0; padding:0; box-sizing:border-box; -webkit-tap-highlight-color:transparent; min-width:0; }
+  html,body{ width:100%; max-width:100%; overflow-x:hidden; }
+  html{ scroll-behavior:smooth; }
+  body{ font-family:var(--font); color:var(--body); background:var(--bg); line-height:1.6; font-weight:400;
+        -webkit-font-smoothing:antialiased; }
+  img{ max-width:100%; height:auto; display:block; }
+  h1,h2,h3,h4,p,li,td,th{ overflow-wrap:anywhere; }
+  h1,h2,h3{ color:var(--title); font-weight:300; letter-spacing:-.03em; line-height:1.1; }
+  h4{ color:var(--title); font-weight:600; letter-spacing:-.01em; }
+  .num{ font-family:var(--mono); font-variant-numeric:tabular-nums; font-feature-settings:"tnum" on; }
+  .wrap{ max-width:1080px; margin:0 auto; padding:0 24px; }
+  .kick{ color:var(--komeco); font-size:12px; letter-spacing:.18em; text-transform:uppercase; font-weight:600; }
+  svg{ display:block; }
+
+  /* HEADER */
+  header.top{ position:sticky; top:0; z-index:30; background:rgba(255,255,255,.86); backdrop-filter:blur(10px);
+              border-bottom:1px solid var(--line); }
+  header.top .in{ max-width:1080px; margin:0 auto; padding:14px 24px; display:flex; align-items:center; gap:12px; }
+  .logo{ font-family:var(--font); font-weight:700; letter-spacing:.14em; font-size:19px; color:var(--komeco); }
+  .logo span{ display:inline-block; width:26px; height:26px; background:var(--komeco); color:#fff; border-radius:6px;
+              text-align:center; line-height:26px; margin-right:8px; font-size:15px; }
+  header.top .rep{ margin-left:auto; font-size:12px; color:var(--body); letter-spacing:.02em; }
+
+  /* HERO */
+  .hero{ position:relative; padding:72px 0 40px; overflow:hidden; }
+  .hero::before{ content:""; position:absolute; top:-160px; right:-160px; width:460px; height:460px; border-radius:50%;
+                 background:radial-gradient(circle, rgba(227,6,19,.06), transparent 70%); pointer-events:none; }
+  .hero .grid{ display:grid; gap:40px; grid-template-columns:1fr; align-items:center; }
+  @media(min-width:860px){ .hero .grid{ grid-template-columns:1.1fr .9fr; } }
+  .hero h1{ font-size:clamp(34px,6vw,56px); margin:18px 0 0; }
+  .hero h1 b{ font-weight:600; color:var(--komeco); letter-spacing:-.03em; }
+  .hero .lead{ font-size:clamp(16px,2.4vw,19px); color:var(--body); margin-top:16px; max-width:540px; }
+  .hero .for{ margin-top:28px; display:inline-flex; align-items:center; gap:14px; background:var(--soft);
+              border:1px solid var(--line); border-radius:var(--r); padding:14px 18px; }
+  .hero .for .av{ width:42px; height:42px; border-radius:8px; background:var(--komeco-soft); color:var(--komeco);
+                  display:grid; place-items:center; flex:0 0 auto; }
+  .hero .for small{ font-size:11px; letter-spacing:.12em; text-transform:uppercase; color:var(--body); }
+  .hero .for b{ display:block; color:var(--title); font-weight:600; font-size:17px; letter-spacing:-.01em; }
+  .hero .metas{ margin-top:18px; display:flex; flex-wrap:wrap; gap:8px; }
+  .hero .metas span{ font-size:12.5px; color:var(--body); background:#fff; border:1px solid var(--line);
+                     border-radius:var(--r-pill,9999px); padding:6px 13px; }
+  .hero .metas span b{ color:var(--title); font-weight:600; }
+  .hero .shot{ position:relative; background:linear-gradient(165deg,#fbfcfe,#eef2f8); border:1px solid var(--line);
+               border-radius:16px; padding:28px; box-shadow:var(--sh-card); display:grid; place-items:center; }
+  .hero .shot img{ max-height:340px; width:auto; filter:drop-shadow(0 24px 30px rgba(6,27,49,.20)); }
+  .hero .shot .tag{ position:absolute; top:16px; left:16px; background:var(--komeco); color:#fff; font-weight:600;
+                    font-size:12px; letter-spacing:.04em; padding:6px 12px; border-radius:var(--r-sm); }
+
+  /* SPEC BAR */
+  .specbar{ padding:8px 0 8px; }
+  .specbar .grid{ display:grid; gap:12px; grid-template-columns:repeat(4,1fr); }
+  @media(max-width:680px){ .specbar .grid{ grid-template-columns:repeat(2,1fr); } }
+  .spec{ background:#fff; border:1px solid var(--line); border-radius:var(--r); padding:18px 16px; box-shadow:var(--sh-sm); }
+  .spec .ic{ color:var(--komeco); margin-bottom:10px; }
+  .spec b{ display:block; font-family:var(--mono); font-variant-numeric:tabular-nums; font-size:22px; color:var(--title);
+           font-weight:600; letter-spacing:-.01em; }
+  .spec b em{ font-style:normal; font-size:13px; color:var(--body); font-family:var(--font); }
+  .spec span{ font-size:12.5px; color:var(--body); }
+
+  /* SECTION */
+  section.blk{ padding:56px 0 8px; }
+  .head{ max-width:680px; margin:0 auto 34px; text-align:center; }
+  .head h2{ font-size:clamp(26px,4.4vw,38px); margin-top:8px; }
+  .head p{ color:var(--body); margin-top:10px; font-size:16px; }
+
+  /* ALT (alternativa) */
+  .alt{ margin:0 auto; max-width:1080px; }
+  .altbox{ display:flex; align-items:center; gap:16px; flex-wrap:wrap; background:var(--navy); color:#fff;
+           border-radius:var(--r); padding:20px 24px; }
+  .altbox .ic{ color:#fff; opacity:.9; flex:0 0 auto; }
+  .altbox .t b{ color:#fff; font-weight:600; letter-spacing:-.01em; font-size:16px; }
+  .altbox .t span{ display:block; color:#c6d2e2; font-size:13.5px; margin-top:2px; }
+  .altbox .pill{ margin-left:auto; background:rgba(255,255,255,.12); border:1px solid rgba(255,255,255,.2);
+                 color:#fff; border-radius:var(--r-sm); padding:10px 16px; font-size:13.5px; font-weight:500; }
+  .altbox .pill b{ color:#fff; font-weight:600; }
+
+  /* PRODUTO */
+  .prod{ display:grid; gap:14px; grid-template-columns:repeat(2,1fr); }
+  @media(max-width:620px){ .prod{ grid-template-columns:1fr; } }
+  .card{ background:#fff; border:1px solid var(--line); border-radius:var(--r); padding:22px; box-shadow:var(--sh-sm); }
+  .card .ic{ width:38px; height:38px; border-radius:8px; background:var(--komeco-soft); color:var(--komeco);
+             display:grid; place-items:center; margin-bottom:12px; }
+  .card h4{ font-size:16px; margin-bottom:4px; }
+  .card p{ font-size:14px; color:var(--body); }
+
+  /* VIDEO */
+  .video .frame{ border-radius:var(--r); overflow:hidden; box-shadow:var(--sh-card); background:#0a0a0a; border:1px solid var(--line); }
+  .video video{ width:100%; display:block; }
+  .video .cap{ text-align:center; color:var(--body); font-size:13px; margin-top:12px; }
+  .video-print{ display:none; }
+
+  /* TABELA */
+  .quote{ max-width:860px; margin:0 auto; }
+  table.tab{ width:100%; border-collapse:collapse; background:#fff; border:1px solid var(--line); border-radius:var(--r);
+             overflow:hidden; box-shadow:var(--sh-card); }
+  .tab thead th{ background:var(--soft); color:var(--title); text-align:left; padding:14px 18px; font-size:11.5px;
+                 letter-spacing:.1em; text-transform:uppercase; font-weight:600; border-bottom:1px solid var(--line); }
+  .tab thead th.r{ text-align:right; } .tab thead th.c{ text-align:center; }
+  .tab tbody td{ padding:18px; border-bottom:1px solid var(--line); font-size:15px; color:var(--title); }
+  .tab td.r{ text-align:right; } .tab td.c{ text-align:center; }
+  .tab .pn b{ font-weight:600; color:var(--title); font-size:15.5px; }
+  .tab .pn small{ display:block; color:var(--body); font-size:12.5px; margin-top:3px; letter-spacing:.01em; }
+  .tab tfoot td{ padding:13px 18px; font-size:14px; }
+  .tab tfoot .lbl{ color:var(--body); } .tab tfoot .val{ text-align:right; color:var(--title); font-weight:500; }
+  .tab tfoot .frete td{ background:#f2faf5; }
+  .tab tfoot .frete .lbl{ color:var(--green); font-weight:600; } .tab tfoot .frete .val{ color:var(--green); font-weight:700; }
+  .tab tfoot .total td{ background:var(--komeco); }
+  .tab tfoot .total .lbl{ color:#fff; font-weight:600; letter-spacing:.02em; font-size:15px; }
+  .tab tfoot .total .val{ color:#fff; font-weight:700; font-size:19px; }
+  .terms{ display:grid; gap:12px; grid-template-columns:repeat(3,1fr); margin-top:16px; }
+  @media(max-width:620px){ .terms{ grid-template-columns:1fr; } }
+  .terms .c{ background:#fff; border:1px solid var(--line); border-radius:var(--r); padding:16px 18px; box-shadow:var(--sh-sm); }
+  .terms .c small{ font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:var(--body); }
+  .terms .c b{ display:block; margin-top:5px; color:var(--title); font-size:16px; font-weight:600; letter-spacing:-.01em; }
+  .notes{ margin-top:16px; font-size:12.5px; color:var(--body); }
+  .notes b{ color:var(--title); font-weight:600; } .notes ul{ margin:7px 0 0 18px; } .notes li{ margin:4px 0; }
+
+  /* ROBOS */
+  .robos{ background:var(--soft); border-top:1px solid var(--line); margin-top:56px; }
+  .rgrid{ display:grid; gap:16px; grid-template-columns:repeat(2,1fr); max-width:900px; margin:0 auto; }
+  @media(max-width:620px){ .rgrid{ grid-template-columns:1fr; } }
+  .robo{ background:#fff; border:1px solid var(--line); border-radius:var(--r); overflow:hidden; box-shadow:var(--sh-sm);
+         display:flex; flex-direction:column; }
+  .robo .pic{ background:linear-gradient(165deg,#fbfcfe,#eef2f8); display:grid; place-items:center; padding:24px; border-bottom:1px solid var(--line); }
+  .robo .pic img{ height:150px; width:auto; filter:drop-shadow(0 14px 18px rgba(6,27,49,.16)); }
+  .robo .b{ padding:20px 22px; } .robo h4{ font-size:17px; } .robo .q{ color:var(--komeco); font-size:12.5px; font-weight:500; margin-top:2px; }
+  .robo ul{ list-style:none; margin-top:12px; } .robo li{ position:relative; padding:5px 0 5px 20px; font-size:13.5px; color:var(--body); }
+  .robo li::before{ content:""; position:absolute; left:2px; top:12px; width:6px; height:6px; border-radius:50%; background:var(--komeco); }
+  .robo .foot{ margin-top:auto; padding:14px 22px; border-top:1px solid var(--line); color:var(--title); font-size:13px; font-weight:500; }
+
+  /* CARIMBO (não alterar identidade navy+dourado) */
+  footer.rod{ background:var(--navy); color:#fff; padding:48px 0 56px; margin-top:0; }
+  .carimbo{ max-width:600px; margin:0 auto; background:linear-gradient(160deg,#0e2647,#0a1a30); border:2px solid var(--dourado);
+            border-radius:14px; padding:22px; display:flex; align-items:center; gap:18px; }
+  .selolh{ flex:0 0 auto; width:82px; height:82px; border:2px solid var(--dourado); border-radius:50%; display:grid; place-items:center; text-align:center; }
+  .selolh b{ color:var(--dourado); font-size:26px; font-weight:700; line-height:1; }
+  .selolh small{ color:var(--dourado); font-size:7px; letter-spacing:.14em; display:block; margin-top:3px; }
+  .dados{ flex:1; min-width:0; } .dados h3{ color:#fff; font-size:20px; font-weight:600; letter-spacing:-.01em; }
+  .dados p{ color:#c6d2e2; font-size:13px; margin:4px 0 6px; } .dados .g{ color:var(--dourado); font-weight:600; font-size:13.5px; }
+  .qr{ flex:0 0 auto; width:88px; height:88px; background:#fff; border-radius:10px; padding:7px; } .qr img{ width:100%; height:100%; }
+  @media(max-width:440px){ .carimbo{ flex-direction:column; text-align:center; } }
+  .disc{ max-width:860px; margin:22px auto 0; padding:0 24px; color:#8ea1b8; font-size:11px; text-align:center; line-height:1.5; }
+
+  .cta{ position:fixed; right:18px; bottom:18px; background:var(--komeco); color:#fff; text-decoration:none; font-weight:600;
+        padding:13px 20px; border-radius:var(--r); box-shadow:0 10px 24px rgba(227,6,19,.3); z-index:40; font-size:14px;
+        display:inline-flex; align-items:center; gap:8px; }
+
+  @media print{
+    @page{ margin:11mm; }
+    header.top{ position:static; backdrop-filter:none; } .cta{ display:none !important; }
+    .hero::before{ display:none; } .video video{ display:none; } .video .frame{ box-shadow:none; }
+    .video-print{ display:block; position:relative; border-radius:var(--r); overflow:hidden; border:1px solid var(--line); }
+    .video-print img{ width:100%; } .video-print .ov{ position:absolute; inset:0;
+       background:linear-gradient(180deg,rgba(6,27,49,.05),rgba(6,27,49,.6)); display:flex; flex-direction:column; justify-content:flex-end; padding:18px; }
+    .video-print .ov .p{ position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); width:60px; height:60px;
+       background:var(--komeco); border-radius:50%; display:grid; place-items:center; }
+    .video-print .ov b{ color:#fff; font-weight:600; font-size:15px; } .video-print .ov span{ color:#e9eef5; font-size:12px; }
+    *{ -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+    .hero,.specbar,.blk,.alt,.quote,.robos,footer.rod{ break-inside:avoid; }
+    .prod,.rgrid,table.tab{ break-inside:avoid; }
+  }
+</style>
+</head>
+<body>
+  <header class="top"><div class="in">
+    <span class="logo"><span>K</span>KOMECO</span>
+    <span class="rep">Representante · L.H.C. da Silva</span>
+  </div></header>
+
+  <!-- HERO -->
+  <section class="hero"><div class="wrap"><div class="grid">
+    <div>
+      <div class="kick">Proposta Comercial · Opção C7</div>
+      <h1>Carregador Veicular <b>Komeco C7</b></h1>
+      <p class="lead">Recarga OCPP bivolt (110/220 V) para o seu empreendimento — tecnologia, proteção IP65 e gestão pelo aplicativo.</p>
+      <div class="for">
+        <div class="av">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 21V8l9-5 9 5v13"/><path d="M9 21v-6h6v6"/></svg>
+        </div>
+        <div><small>Preparada para</small><b>R Branco Engenharia Ltda</b></div>
+      </div>
+      <div class="metas">
+        <span><b>Estado:</b> Pará (PA)</span>
+        <span>Ref. orçamento Komeco <b>nº 112830</b></span>
+        <span><b>25/09/2026</b></span>
+      </div>
+    </div>
+    <div class="shot">
+      <span class="tag">7 kW · 110/220 V</span>
+      <img src="assets/foto_carregador.png" alt="Carregador Veicular OCPP Komeco C7">
+    </div>
+  </div></div></section>
+
+  <!-- SPEC BAR -->
+  <section class="specbar"><div class="wrap"><div class="grid">
+    <div class="spec">
+      <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8z"/></svg></div>
+      <b class="num">7<em> kW</em></b><span>Potência</span>
+    </div>
+    <div class="spec">
+      <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div>
+      <b class="num">110/220</b><span>Tensão (V)</span>
+    </div>
+    <div class="spec">
+      <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+      <b class="num">IP65</b><span>Proteção externa</span>
+    </div>
+    <div class="spec">
+      <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M18 10h1a3 3 0 0 1 0 6h-1"/><path d="M6 10H5a3 3 0 0 0 0 6h1"/><path d="M9 13h6"/></svg></div>
+      <b class="num">OCPP</b><span>Gestão app/web</span>
+    </div>
+  </div></div></section>
+
+  <!-- ALTERNATIVA -->
+  <div class="alt" style="margin-top:40px"><div class="wrap"><div class="altbox">
+    <div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 3 4 7l4 4"/><path d="M4 7h16"/><path d="m16 21 4-4-4-4"/><path d="M20 17H4"/></svg></div>
+    <div class="t"><b>Você escolhe a potência ideal</b><span>Precisa de recarga mais rápida? Há também a opção C22, de 22 kW.</span></div>
+    <div class="pill">Outra opção: <b>C22 · 22 kW</b> · 220/380 V</div>
+  </div></div></div>
+
+  <!-- PRODUTO -->
+  <section class="blk"><div class="wrap">
+    <div class="head"><div class="kick">O produto</div><h2>Carregador Veicular OCPP</h2>
+      <p>Recarga para híbridos plug-in e 100% elétricos, com gestão e acompanhamento pelo aplicativo e pela web.</p></div>
+    <div class="prod">
+      <div class="card"><div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8z"/></svg></div>
+        <h4>Potência 7 kW</h4><p>110/220 V — ideal para recarga residencial e vagas de uso diário.</p></div>
+      <div class="card"><div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M8 7V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v3"/></svg></div>
+        <h4>Tecnologia OCPP</h4><p>Gestão e acompanhamento da recarga pelo app e pela web.</p></div>
+      <div class="card"><div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+        <h4>Cabo 7,5 m · IP65</h4><p>Alcance de sobra e proteção contra poeira e água para uso externo.</p></div>
+      <div class="card"><div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></div>
+        <h4>Design em vidro</h4><p>Acabamento premium que valoriza a fachada e a área comum.</p></div>
+    </div>
+  </div></section>
+
+  <!-- VIDEO -->
+  <section class="blk video"><div class="wrap" style="max-width:900px">
+    <div class="head"><div class="kick">Veja em ação</div></div>
+    <div class="frame">
+      <video controls playsinline preload="metadata" poster="assets/foto_carregador.png">
+        <source src="assets/vid_carregador.mp4" type="video/mp4">
+        Seu navegador não reproduz o vídeo. <a href="assets/vid_carregador.mp4">Baixar vídeo</a>.
+      </video>
+      <div class="video-print"><img src="assets/foto_carregador.png" alt="Carregador Komeco">
+        <div class="ov"><div class="p"><svg width="22" height="22" viewBox="0 0 24 24" fill="#fff"><path d="M8 5v14l11-7z"/></svg></div>
+          <b>Vídeo: Carregador OCPP em funcionamento</b><span>Assista na versão online: rb-c7-3bzxs</span></div>
+      </div>
+    </div>
+    <p class="cap">Toque para assistir — o Carregador Veicular OCPP Komeco em funcionamento.</p>
+  </div></section>
+
+  <!-- PROPOSTA -->
+  <section class="blk"><div class="wrap">
+    <div class="head"><div class="kick">Sua proposta</div><h2>Investimento · Opção C7</h2>
+      <p>Condição especial de primeira compra para a R Branco Engenharia — <b style="color:var(--title);font-weight:600">valores já com IPI</b>.</p></div>
+    <div class="quote">
+      <table class="tab">
+        <thead><tr><th>Item</th><th class="c">Qtd</th><th class="r">Unit. c/ IPI</th><th class="r">Total</th></tr></thead>
+        <tbody>
+          <tr>
+            <td class="pn"><b>Carregador Komeco C7</b><small>7 kW · 110 / 220 V · cód. 2900950003</small></td>
+            <td class="c num">4</td><td class="r num">R$ 3.045,00</td><td class="r num">R$ 12.180,00</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr class="frete"><td colspan="3" class="lbl">Frete — cortesia de primeira compra</td><td class="val num">GRÁTIS</td></tr>
+          <tr class="total"><td colspan="3" class="lbl">TOTAL COM IPI</td><td class="val num">R$ 12.180,00</td></tr>
+        </tfoot>
+      </table>
+      <div class="terms">
+        <div class="c"><small>Pagamento</small><b>PIX</b></div>
+        <div class="c"><small>Entrega</small><b>A combinar (PA)</b></div>
+        <div class="c"><small>Validade</small><b>10 dias</b></div>
+      </div>
+      <div class="notes"><b>Observações</b>
+        <ul>
+          <li>Base: orçamento oficial Komeco nº 112830, emitido em 25/09/2026.</li>
+          <li>Valor unitário já com IPI de 9,75% incluído (sem IPI: R$ 2.774,48).</li>
+          <li>Eventual ICMS-ST é de responsabilidade do adquirente, conforme a legislação do estado (PA) — consulte seu contador.</li>
+          <li>Valores estimativos, sujeitos a confirmação no faturamento do pedido.</li>
+        </ul>
+      </div>
+    </div>
+  </div></section>
+
+  <!-- ROBOS -->
+  <div class="robos"><section class="blk"><div class="wrap">
+    <div class="head"><div class="kick">Também disponível para aquisição</div><h2>Robôs de piscina Komeco</h2>
+      <p>Limpeza automática com controle pelo app Komeco Connect.</p></div>
+    <div class="rgrid">
+      <div class="robo">
+        <div class="pic"><img src="assets/foto_aspirador.png" alt="Robô Aspirador AquaPlus Prime"></div>
+        <div class="b"><h4>Robô Aspirador AquaPlus Prime</h4><div class="q">Fundo, paredes e linha d'água</div>
+          <ul><li>Sucção de até 14 m³/h; até 3h30 sem fio; bateria removível.</li>
+          <li>Sensores infravermelho, ultrassônico, de profundidade e giroscópio.</li>
+          <li>3 modos no painel ou 7 modos no app Komeco Connect.</li></ul></div>
+        <div class="foot">Disponível para aquisição — consulte condições.</div>
+      </div>
+      <div class="robo">
+        <div class="pic"><img src="assets/foto_skimmer.png" alt="Robô Skimmer de Superfície"></div>
+        <div class="b"><h4>Robô Skimmer de Superfície</h4><div class="q">Limpeza da superfície da água</div>
+          <ul><li>Carregamento solar ou portátil; até 6h no modo smart.</li>
+          <li>Bateria de lítio; Wi-Fi e navegação que evita obstáculos.</li>
+          <li>App Komeco Connect: joystick, modo padrão, smart e retorno à borda.</li></ul></div>
+        <div class="foot">Disponível para aquisição — consulte condições.</div>
+      </div>
+    </div>
+  </div></section></div>
+
+  <!-- CARIMBO -->
+  <footer class="rod">
+    <div class="carimbo">
+      <div class="selolh"><div><b>LH</b><small>LUIZ HENRIQUE</small></div></div>
+      <div class="dados"><h3>Luiz Henrique</h3>
+        <p>Dúvida ou quer fechar? Fale comigo — atendimento direto.</p>
+        <span class="g">Aponte a câmera no QR-Code →</span></div>
+      <div class="qr"><img src="assets/qr_airgo.png" alt="QR-Code para falar com Luiz Henrique"></div>
+    </div>
+    <p class="disc">Proposta preparada por L.H.C. da Silva (representante Komeco) para R Branco Engenharia Ltda.
+    Produtos e marca Komeco são de titularidade do fabricante. Documento de caráter comercial; valores sujeitos a confirmação no faturamento.</p>
+  </footer>
+
+  <a class="cta" href="https://airgo.bio/lhcorreia" target="_blank" rel="noopener">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.5 15.2L2 22l4.9-1.4A10 10 0 1 0 12 2z"/></svg>Falar no WhatsApp</a>
+</body>
+</html>
