@@ -236,6 +236,20 @@ h1,h2,h3{color:var(--ink); line-height:1.14; margin:0}
   padding:12px 20px;border-radius:12px;box-shadow:0 10px 24px -10px rgba(255,80,20,.7)}
 .btn-tomi svg{width:18px;height:18px;stroke:#fff;fill:none;stroke-width:2}
 @media(max-width:820px){ .vgrid{grid-template-columns:1fr} .tomi{grid-template-columns:1fr} }
+
+/* ===== DARK-VARIANT (prova fundo escuro) ===== */
+:root{--ink:#eef4fc;--body:#b8cce4;--muted:#8ea6c2;--line:#1d3a5a;--bg:#070f1c;--card:#0f2439;}
+body{background:#070f1c}
+.card,.kpi,.feat,.pricebox,.condlist,.tl,.alert,.shot{background:var(--card);border-color:var(--line)}
+.opt{background:linear-gradient(135deg,#12293f,#0c1c2e);border-color:var(--line)}
+.feat .ic{background:linear-gradient(135deg,#123a5c,#0d2a44)}
+.spec,.condlist .r,.opt li,.shot .cap,.photo figcaption,.photo{border-color:var(--line)}
+.photo{background:#0b1a2b}
+.shot.res .cap .tag{background:#123a5c;color:#7fc0ff}
+.shot.emg .cap .tag{background:#2a1f4d;color:#c3a8ff}
+.head p,.kpi span,.shot .cap p,.tl span,.pricebox .sub{color:var(--body)}
+.pricebox .val,.tl b,.spec b,.condlist .r b{color:var(--ink)}
+.photo img,.shot .pic,.selo{background:#fff}
 </style>
 </head>
 <body>
