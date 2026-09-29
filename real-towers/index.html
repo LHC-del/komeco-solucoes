@@ -214,6 +214,7 @@ h1,h2,h3{color:var(--ink); line-height:1.14; margin:0}
 .vcard{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:var(--r-lg);overflow:hidden;display:flex;flex-direction:column}
 .vcard .vwrap{position:relative;background:#000;line-height:0}
 .vcard video{width:100%;height:auto;max-height:520px;display:block;background:#000;object-fit:contain}
+.vcard .vwrap img{width:100%;height:210px;object-fit:cover;display:block;background:#0a1420}
 .vcard .vmeta{padding:16px 18px}
 .vcard .vmeta .tag{display:inline-block;font-size:.66rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;
   color:#f0dca0;background:rgba(201,162,75,.14);border-radius:999px;padding:4px 11px;margin-bottom:9px}
@@ -222,6 +223,7 @@ h1,h2,h3{color:var(--ink); line-height:1.14; margin:0}
 .vcard .specs{margin:10px 0 0;padding:0;list-style:none}
 .vcard .specs li{font-size:.82rem;color:#d6e4f5;padding:5px 0 5px 20px;position:relative;border-top:1px solid rgba(255,255,255,.08)}
 .vcard .specs li::before{content:"›";position:absolute;left:2px;color:#f0dca0;font-weight:800}
+.vcard .vmeta .fecho{margin:12px 0 0;font-size:.86rem;font-style:italic;color:#8fd0ff;font-weight:600}
 
 .tomi{display:grid;grid-template-columns:1.15fr 1fr;gap:clamp(16px,2.6vw,26px);align-items:stretch;margin-top:6px}
 .tomi .vbox{background:#000;border:1px solid rgba(255,255,255,.12);border-radius:var(--r-lg);overflow:hidden;display:flex;align-items:center}
@@ -313,7 +315,9 @@ h1,h2,h3{color:#fff}
 
 /* AGILE cards-icone (Access, Design Center, Painel) — grid dark com ico-ring */
 .agrid{display:grid;grid-template-columns:repeat(2,1fr);gap:clamp(14px,2.4vw,22px);margin-top:6px}
-.acard{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:var(--r-lg);padding:26px 22px 24px;display:flex;flex-direction:column}
+.acard{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:var(--r-lg);padding:0 0 24px;display:flex;flex-direction:column;overflow:hidden}
+.acard .acard-img{width:100%;height:200px;object-fit:cover;display:block;background:#000}
+.acard .acard-body{padding:20px 22px 0}
 .acard .ico-ring{margin:0 0 16px}
 .acard .tag{display:inline-block;font-size:.66rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#f0dca0;background:rgba(201,162,75,.14);border-radius:999px;padding:4px 11px;margin-bottom:9px;align-self:flex-start}
 .acard h3{color:#fff;font-size:1.1rem;margin:0 0 6px}
@@ -609,10 +613,7 @@ h1,h2,h3{color:#fff}
   <!-- AGILE Mirror (Smart Mirror) — card COM VÍDEO -->
   <div class="agile" style="margin-top:26px">
     <div class="vbox">
-      <video controls playsinline preload="metadata" poster="assets/agile_mirror.jpg">
-        <source src="assets/agile_mirror.mp4" type="video/mp4">
-        Seu navegador não reproduz o vídeo.
-      </video>
+      <img src="assets/agile_mirror.jpg" alt="AGILE Mirror — espelho da cabina como interface touchscreen multimídia">
     </div>
     <div class="info">
       <span class="chip-consulta">AGILE · Mirror (Smart Mirror)</span>
@@ -629,10 +630,7 @@ h1,h2,h3{color:#fff}
   <!-- AGILE Access (MAXPASS) — card COM VÍDEO -->
   <div class="agile" style="margin-top:26px">
     <div class="vbox">
-      <video controls playsinline preload="metadata" poster="assets/agile_access.jpg">
-        <source src="assets/agile_access.mp4" type="video/mp4">
-        Seu navegador não reproduz o vídeo.
-      </video>
+      <img src="assets/agile_access.jpg" alt="AGILE Access — controle de acesso por senha, cartão RFID ou smartphone">
     </div>
     <div class="info">
       <span class="chip-consulta">AGILE · Access (MAXPASS)</span>
@@ -650,7 +648,8 @@ h1,h2,h3{color:#fff}
   <div class="agrid">
 
     <article class="acard">
-      <div class="ico-ring amber"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4"/><circle cx="12" cy="10.5" r="2.4"/><path d="M12 6.6v1.1M12 13.3v1.1M15.4 10.5h-1.1M9.7 10.5H8.6"/></svg></div>
+      <img class="acard-img" src="assets/agile_design.jpg" alt="AGILE Design Center — interface touchscreen multimídia customizável na cabina">
+      <div class="acard-body">
       <span class="tag">AGILE · Design Center</span>
       <h3>AGILE Design Center</h3>
       <p class="tl">O CMS que customiza o AGILE em tempo real.</p>
@@ -660,10 +659,12 @@ h1,h2,h3{color:#fff}
         <li>Acesso remoto por smartphone, tablet ou PC</li>
         <li>Atualiza botões do painel, anunciantes e comunicados do condomínio</li>
       </ul>
+      </div>
     </article>
 
     <article class="acard">
-      <div class="ico-ring teal"><svg viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="2"/><circle cx="8.5" cy="8" r="1.3"/><circle cx="15.5" cy="8" r="1.3"/><circle cx="8.5" cy="13" r="1.3"/><circle cx="15.5" cy="13" r="1.3"/><circle cx="8.5" cy="18" r="1.3"/><circle cx="15.5" cy="18" r="1.3"/></svg></div>
+      <img class="acard-img" src="assets/agile_painel.jpg" alt="AGILE Painel de Operação — painel de destino na cabina">
+      <div class="acard-body">
       <span class="tag">AGILE · Painel de Operação</span>
       <h3>AGILE Painel de Operação</h3>
       <p class="tl">Liberdade para escolher o seu destino.</p>
@@ -673,6 +674,7 @@ h1,h2,h3{color:#fff}
         <li>Agrupamento de andares por sequência ou característica</li>
         <li>Conteúdo gerido em tempo real pelo Design Center</li>
       </ul>
+      </div>
     </article>
 
   </div>
@@ -680,10 +682,7 @@ h1,h2,h3{color:#fff}
   <!-- AGILE Antecipacao de Chamadas — POR ULTIMO (Real e RESIDENCIAL) -->
   <div class="agile" style="margin-top:26px">
     <div class="vbox">
-      <video controls playsinline preload="metadata" poster="assets/agile_antecipacao.jpg">
-        <source src="assets/agile_antecipacao.mp4" type="video/mp4">
-        Seu navegador não reproduz o vídeo.
-      </video>
+      <img src="assets/agile_antecipacao.jpg" alt="AGILE Antecipação de chamadas — totem de destino no hall">
     </div>
     <div class="info">
       <span class="chip-consulta">AGILE · Antecipação de chamadas</span>
@@ -702,46 +701,85 @@ h1,h2,h3{color:#fff}
   <div class="vgrid">
 
     <article class="vcard">
-      <div class="vwrap"><video controls playsinline preload="metadata" poster="assets/komeco_carregador.jpg"><source src="assets/komeco_carregador.mp4" type="video/mp4">Seu navegador não reproduz o vídeo.</video></div>
+      <div class="vwrap"><img src="assets/komeco_aquecedores.png" alt="Aquecimento de água central Komeco"></div>
       <div class="vmeta">
-        <span class="tag">Mobilidade elétrica</span>
-        <h3>Carregador Veicular OCPP</h3>
-        <p>Recarga para híbridos e elétricos na garagem — valoriza o empreendimento e atrai o comprador de carro elétrico.</p>
+        <span class="tag">🚿 Aquecimento de água central</span>
+        <h3>Banho quente em todas as torres.</h3>
         <ul class="specs">
-          <li>Duas potências: 7 kW (220 V) e 22 kW (380 V)</li>
-          <li>Tecnologia OCPP — gestão pelo app e web</li>
-          <li>Cabo 7,5 m · proteção IP65 (uso externo)</li>
-          <li>Design em vidro — acabamento premium</li>
+          <li>Bomba de calor comercial para grande volume</li>
+          <li>Aquecimento solar + reservatórios térmicos</li>
+          <li>Gás como reforço/backup</li>
+          <li>Recirculação com bombas TP</li>
         </ul>
+        <p class="fecho">Água quente central gastando muito menos.</p>
       </div>
     </article>
 
     <article class="vcard">
-      <div class="vwrap"><video controls playsinline preload="metadata" poster="assets/komeco_aspirador.jpg"><source src="assets/komeco_aspirador.mp4" type="video/mp4">Seu navegador não reproduz o vídeo.</video></div>
+      <div class="vwrap"><img src="assets/komeco_piscina.png" alt="Piscina e lazer Komeco"></div>
       <div class="vmeta">
-        <span class="tag">Lazer · Piscina</span>
-        <h3>Robô Aspirador AquaPlus Prime</h3>
-        <p>Limpeza automática de fundo, paredes e linha d'água — controle pelo app Komeco Connect.</p>
+        <span class="tag">🏊 Piscina &amp; lazer</span>
+        <h3>Área comum sempre pronta.</h3>
         <ul class="specs">
-          <li>Sucção de até 14 m³/h</li>
-          <li>Até 3h30 sem fio · bateria removível</li>
-          <li>Sensores infravermelho, ultrassônico e giroscópio</li>
-          <li>3 modos no painel ou 7 modos no app</li>
+          <li>Bombas + filtros + robôs AquaPlus e Skimmer</li>
+          <li>Gerador de cloro e UV-C + O₃</li>
+          <li>Aquecimento e iluminação RGB</li>
+          <li>AquaHUB para automação</li>
         </ul>
+        <p class="fecho">Piscina limpa com menos mão de obra.</p>
       </div>
     </article>
 
     <article class="vcard">
-      <div class="vwrap"><video controls playsinline preload="metadata" poster="assets/komeco_skimmer.jpg"><source src="assets/komeco_skimmer.mp4" type="video/mp4">Seu navegador não reproduz o vídeo.</video></div>
+      <div class="vwrap"><img src="assets/komeco_solar.png" alt="Energia solar Komeco"></div>
       <div class="vmeta">
-        <span class="tag">Lazer · Piscina</span>
-        <h3>Robô Skimmer de Superfície</h3>
-        <p>Mantém a superfície da água sempre limpa — navegação inteligente que evita obstáculos.</p>
+        <span class="tag">☀️ Energia solar</span>
+        <h3>Reduz a conta comum.</h3>
         <ul class="specs">
-          <li>Carregamento solar ou portátil</li>
-          <li>Até 6 h no modo smart · bateria de lítio</li>
-          <li>Wi-Fi · app Komeco Connect</li>
-          <li>Modos joystick, padrão, smart e retorno à borda</li>
+          <li>Módulos + inversores nas áreas comuns</li>
+          <li>Micro inversores</li>
+          <li>Luminárias solares p/ jardins e garagem</li>
+        </ul>
+        <p class="fecho">Menos energia na taxa condominial.</p>
+      </div>
+    </article>
+
+    <article class="vcard">
+      <div class="vwrap"><img src="assets/komeco_bombas.png" alt="Bombas e pressurização Komeco"></div>
+      <div class="vmeta">
+        <span class="tag">🔧 Bombas e pressurização</span>
+        <h3>Pressão firme em todos os andares.</h3>
+        <ul class="specs">
+          <li>Pressurizadores Smartpress e linha TP</li>
+          <li>Bombas para reservatórios e recalque</li>
+          <li>Operação silenciosa</li>
+        </ul>
+        <p class="fecho">Pressão igual do térreo à cobertura.</p>
+      </div>
+    </article>
+
+    <article class="vcard">
+      <div class="vwrap"><img src="assets/komeco_ev.png" alt="Mobilidade elétrica Komeco"></div>
+      <div class="vmeta">
+        <span class="tag">🚗 Mobilidade elétrica</span>
+        <h3>Vagas com recarga.</h3>
+        <ul class="specs">
+          <li>Carregador OCPP 7 kW e 22 kW por vaga</li>
+          <li>Gestão por app e RFID (rateio individual)</li>
+        </ul>
+        <p class="fecho">Recarga na garagem valoriza o condomínio.</p>
+      </div>
+    </article>
+
+    <article class="vcard">
+      <div class="vwrap"><img src="assets/komeco_clima.png" alt="Climatização e ar Komeco"></div>
+      <div class="vmeta">
+        <span class="tag">🌬️ Climatização e ar</span>
+        <h3>Salão de festas e academia do condô.</h3>
+        <ul class="specs">
+          <li>Ar-condicionado Inverter p/ áreas comuns</li>
+          <li>Cortina de ar no hall</li>
+          <li>Desumidificador para subsolos</li>
         </ul>
       </div>
     </article>
